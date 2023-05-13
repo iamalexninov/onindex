@@ -1,0 +1,21 @@
+@use '../abstract/variables' as variables;
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: variables.$charcoal-color;
+  font-weight: variables.$fw-700;
+  line-height: 1.3;
+}
+
+h1 { font-size: variables.$fs-1 }
+
+h2 { font-size: variables.$fs-2}
+
+h3 { font-size: variables.$fs-3 }
+
+h4 { font-size: variables.$fs-4 }
+
+h5 { font-size: variables.$fs-5 }

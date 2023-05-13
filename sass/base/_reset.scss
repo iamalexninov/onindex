@@ -1,3 +1,5 @@
+@use '../abstract/variables' as variables;
+
 *,
 *::before,
 *::after {
@@ -38,14 +40,13 @@ ion-icon { pointer-events: none; }
 address { font-style: normal; }
 
 html {
-  font-family: var(--ff-manrope);
+  font-family: variables.$ff-poppins;
   font-size: 10px;
   scroll-behavior: smooth;
 }
 
 body {
-  background-color: var(--white);
-  color: var(--black-coral);
+  background-color: variables.$white-color;
   font-size: 1.6rem;
   line-height: 1.7;
 }
