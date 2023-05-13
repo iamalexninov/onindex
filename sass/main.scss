@@ -1,2 +1,8 @@
 @forward './abstract/variables';
+@forward './abstract/breakpoints';
+
 @forward './base/reset';
+@forward './base/typography';
+@forward './base/reuse';
+
+@forward './layouts/navbar';

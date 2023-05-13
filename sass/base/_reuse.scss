@@ -1,0 +1,12 @@
+@use '../abstract/breakpoints' as b;
+
+.wrapper {
+  padding-inline: 20px;
+  @include b.tablet{
+    margin: 0 auto;
+    max-width: 1200px;
+  }
+}
+
+
+
