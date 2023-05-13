@@ -1,12 +1,14 @@
-@use '../abstract/breakpoints' as b;
+@use "../abstract/breakpoints" as b;
+@use "../abstract/variables" as v;
 
 .wrapper {
   padding-inline: 20px;
-  @include b.tablet{
+  @include b.tablet {
     margin: 0 auto;
     max-width: 1200px;
   }
 }
 
-
-
+.section {
+  padding-block: v.$section-padding;
+}

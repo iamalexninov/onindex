@@ -19,26 +19,43 @@
 </head>
 
 <body>
-    <header class="header">
+    <header class="header" data-header>
         <div class="wrapper">
-            <nav class="navbar" >
+            <nav class="navbar">
                 <a href="#" class="navbar__logo">OninDex</a>
                 <ul class="navbar__list" data-navbar>
-                    <li class="navbar__list__item"><a class="item__link" href="#">Home</a></li>
+                    <li class="navbar__list__item"><a class="item__link" href="#hero">Home</a></li>
                     <li class="navbar__list__item"><a class="item__link" href="#about">About</a></li>
                     <li class="navbar__list__item"><a class="item__link" href="#projects">Projects</a></li>
                     <li class="navbar__list__item"><a class="item__link" href="#blog">Blog</a></li>
                     <li class="navbar__list__item"><a class="item__link" href="#contact">Contact</a></li>
                 </ul>
-                <div class="navbar__buttons" data-nav-buttons>
-                    <i class="fa-solid fa-list-ul" data-open-btn></i>
-                    <i class="fa-solid fa-xmark" data-close-btn></i>
+                <div class="navbar__icons" data-nav-buttons>
+                    <i class="fa-solid fa-list-ul" data-open-icon></i>
+                    <i class="fa-solid fa-xmark" data-close-icon></i>
                 </div>
             </nav>
     </header>
-
     <main>
-
+        <section class="section hero" id="hero">
+            <div class="wrapper">
+                <div class="hero__container">
+                    <div class="hero__content">
+                        <h1 class="hero__content__title">Crafting project specific solutions with expertise</h1>
+                        <p class="hero__content__paragraph">We're a creative company that focuses on establishing
+                            long-term
+                            relationships with customers.</p>
+                        <div class="hero__content__buttons">
+                            <button class="hero__content__buttons__explore">Explore Now</button>
+                            <button class="hero__content__buttons__contact">Contact Us</button>
+                        </div>
+                    </div>
+                    <div class="hero__content__img">
+                        <img class="hero__content__img__item" src="/images/hero-pic1.jpg" alt="Hero Poster">
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
     </div>
     <script src="/js/navbar.js"></script>

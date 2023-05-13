@@ -1,0 +1,57 @@
+@use "../components/buttons" as btn;
+@use "../abstract/variables" as v;
+@use "../abstract/breakpoints" as b;
+
+.hero {
+  background-image: url("../../images/hero-bg.jpg");
+  min-height: 650px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+  @include b.tablet {
+    padding-block-start: calc(v.$section-padding + 50px);
+  }
+  &__container {
+    @include b.tablet {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 80px;
+    }
+  }
+  &__content {
+    color: v.$white-color;
+    max-width: 550px;
+    margin: 0 auto;
+    &__paragraph {
+      text-align: justify;
+      word-break: break-all;
+      margin-block: 15px 30px;
+    }
+    &__buttons {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 70px;
+      @include b.mobile {
+        flex-direction: row;
+        gap: 20px;
+      }
+      @include b.tablet {
+        margin-bottom: 0px;
+      }
+      &__explore {
+        @include btn.button(v.$white-color, v.$primary-color);
+      }
+      &__contact {
+        @include btn.button(v.$primary-color, v.$white-color);
+      }
+    }
+    &__img {
+      &__item {
+        border-radius: 20px;
+      }
+    }
+  }
+}

@@ -1,11 +1,20 @@
 const navbar = document.querySelector("[data-navbar]");
-const openBtn = document.querySelector("[data-open-btn]");
-const closeBtn = document.querySelector("[data-close-btn]");
+const header = document.querySelector('[data-header]')
+const openBtn = document.querySelector("[data-open-icon]");
+const closeBtn = document.querySelector("[data-close-icon]");
 
 window.addEventListener("load", (e) => {
   openBtn.style.display = "block";
   closeBtn.style.display = "none";
 });
+
+window.addEventListener('scroll',(e)=>{
+  if(window.scrollY >= 50){
+    header.style.backgroundColor = `hsl(240, 57%, 54%)`
+  } else{
+    header.style.backgroundColor = 'transparent'
+  }
+})
 
 openBtn.addEventListener("click", (e) => {
   navbar.classList.add("active");

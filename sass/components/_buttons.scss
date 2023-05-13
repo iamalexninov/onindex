@@ -1,0 +1,20 @@
+@use "../abstract/variables" as v;
+
+@mixin button($bg, $tx-bg) {
+  cursor: pointer;
+  background-color: $bg;
+  color: $tx-bg;
+  border-radius: 30px;
+  padding: 10px 15px;
+  width: 150px;
+  font-size: v.$fs-6;
+  z-index: 0;
+  &:hover,
+  :focus {
+    transform: scale(1.2);
+    color: v.$white-color;
+    border: 2px solid v.$white-color;
+    background-color: transparent;
+    transition: all 0.2s ease-in;
+  }
+}
