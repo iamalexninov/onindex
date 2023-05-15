@@ -5,7 +5,7 @@
   &__content {
     display: flex;
     flex-direction: column-reverse;
-    @include b.mobile {
+    @include b.tablet {
       flex-direction: row;
       align-items: center;
       justify-content: space-between;
@@ -14,7 +14,7 @@
     &__poster {
       &__img {
         @include b.tablet {
-          max-width: 450px;
+          max-width: 350px;
         }
         @include b.desktop {
           max-width: 600px;
@@ -27,6 +27,9 @@
       }
       &__list {
         margin-bottom: 40px;
+        @include b.tablet {
+          margin-bottom: 0px;
+        }
         &__item {
           margin-bottom: 8px;
           &__preview {

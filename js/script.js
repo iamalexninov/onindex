@@ -2,17 +2,17 @@ const aboutListElements = document.querySelectorAll("[data-content-item]");
 
 aboutListElements.forEach((el) => el.addEventListener("click", onClick));
 
-let clicked = false;
-
 function onClick(e) {
   e.preventDefault();
-  const more = e.currentTarget.querySelector("[data-content-item-more]");
+  const moreContentElement = e.currentTarget.querySelector(
+    "[data-content-item-more]"
+  );
 
-  if (!clicked) {
-    clicked = true;
-    more.classList.add("active");
+  const clicked = moreContentElement.classList.contains("active");
+
+  if (clicked) {
+    moreContentElement.classList.remove("active");
   } else {
-    clicked = false;
-    more.classList.remove("active");
+    moreContentElement.classList.add("active");
   }
 }
