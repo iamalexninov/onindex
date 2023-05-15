@@ -8,9 +8,7 @@
   margin: 0 auto;
   position: relative;
   z-index: 1;
-  @include b.tablet {
-    padding-block-start: calc(v.$section-padding + 50px);
-  }
+  padding-block: calc(v.$section-padding + 30px);
   &__container {
     @include b.tablet {
       display: flex;

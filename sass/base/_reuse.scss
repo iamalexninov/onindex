@@ -5,12 +5,12 @@
   padding-inline: 20px;
   @include b.tablet {
     margin: 0 auto;
-    max-width: 1200px;
+    max-width: 1300px;
   }
 }
 
 .section {
-  padding-block: v.$section-padding;
+  padding-block-start: v.$section-padding;
 }
 
 .subtitle {

@@ -6,17 +6,20 @@
     text-align: center;
     &__title {
       margin-bottom: 30px;
-      @include b.tablet{
+      @include b.tablet {
         max-width: 550px;
-        margin:0 auto 80px auto;
+        margin: 0 auto 80px auto;
       }
     }
     &__list {
-      display: flex;
-      flex-direction: column;
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
       gap: 2.5rem;
-      @include b.tablet {
-        flex-direction: row;
+      @include b.mobile {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      @include b.desktop {
+        grid-template-columns: repeat(4, 1fr);
       }
       &__item {
         background-color: v.$white-color;
@@ -41,12 +44,11 @@
           margin-block: 10px 15px;
         }
         &__paragraph {
-          text-align: justify;
           word-break: break-all;
-          margin-bottom: 30px;
+          margin-bottom: 10px;
           color: v.$grey-color;
         }
-        &__btn{
+        &__btn {
           color: v.$primary-color;
           text-align: left;
         }

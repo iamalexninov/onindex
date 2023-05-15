@@ -1,3 +1,5 @@
+@use "../abstract/breakpoints" as b;
+
 $primary-color: hsl(240, 57%, 54%);
 $secondary-color: hsl(213, 92%, 81%);
 $charcoal-color: hsla(218, 22%, 26%, 1);
@@ -16,4 +18,5 @@ $fw-700: 700;
 
 $ff-poppins: "Poppins", sans-serif;
 
-$section-padding: 90px;
+$section-padding: 70px;
+
