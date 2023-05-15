@@ -1,0 +1,56 @@
+@use "../../abstract/variables" as v;
+@use "../../abstract/breakpoints" as b;
+
+.service {
+  &__content {
+    text-align: center;
+    &__title {
+      margin-bottom: 30px;
+      @include b.tablet{
+        max-width: 550px;
+        margin:0 auto 80px auto;
+      }
+    }
+    &__list {
+      display: flex;
+      flex-direction: column;
+      gap: 2.5rem;
+      @include b.tablet {
+        flex-direction: row;
+      }
+      &__item {
+        background-color: v.$white-color;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 3px 8px;
+        padding: 25px;
+        &__icon {
+          font-size: 2rem;
+          display: flex;
+          justify-content: center;
+          &__i {
+            display: flex;
+            justify-content: center;
+            padding: 15px;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            background-color: v.$primary-color;
+            color: v.$white-color;
+          }
+        }
+        &__title {
+          margin-block: 10px 15px;
+        }
+        &__paragraph {
+          text-align: justify;
+          word-break: break-all;
+          margin-bottom: 30px;
+          color: v.$grey-color;
+        }
+        &__btn{
+          color: v.$primary-color;
+          text-align: left;
+        }
+      }
+    }
+  }
+}

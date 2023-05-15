@@ -100,6 +100,7 @@ h1 {
 
 h2 {
   font-size: calc(2.6rem + 0.66vw);
+  color: hsl(218, 22%, 26%);
 }
 
 h3 {
@@ -126,6 +127,12 @@ h5 {
 
 .section {
   padding-block: 90px;
+}
+
+.subtitle {
+  color: hsl(240, 57%, 54%);
+  text-transform: uppercase;
+  margin-bottom: 5px;
 }
 
 .header {
@@ -164,7 +171,7 @@ h5 {
   .header .navbar__list {
     all: unset;
     display: flex;
-    gap: 15px;
+    gap: 20px;
   }
 }
 .header .navbar__list__item {
@@ -217,6 +224,11 @@ h5 {
   text-align: justify;
   word-break: break-all;
   margin-block: 15px 30px;
+}
+@media screen and (min-width: 768px) {
+  .hero__content__paragraph {
+    max-width: 400px;
+  }
 }
 .hero__content__buttons {
   display: flex;
@@ -274,4 +286,60 @@ h5 {
 }
 .hero__content__img__item {
   border-radius: 20px;
+}
+
+.service__content {
+  text-align: center;
+}
+.service__content__title {
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 768px) {
+  .service__content__title {
+    max-width: 550px;
+    margin: 0 auto 80px auto;
+  }
+}
+.service__content__list {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+@media screen and (min-width: 768px) {
+  .service__content__list {
+    flex-direction: row;
+  }
+}
+.service__content__list__item {
+  background-color: hsl(0, 0%, 100%);
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 3px 8px;
+  padding: 25px;
+}
+.service__content__list__item__icon {
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+}
+.service__content__list__item__icon__i {
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  background-color: hsl(240, 57%, 54%);
+  color: hsl(0, 0%, 100%);
+}
+.service__content__list__item__title {
+  margin-block: 10px 15px;
+}
+.service__content__list__item__paragraph {
+  text-align: justify;
+  word-break: break-all;
+  margin-bottom: 30px;
+  color: hsl(211, 12%, 48%);
+}
+.service__content__list__item__btn {
+  color: hsl(240, 57%, 54%);
+  text-align: left;
 }/*# sourceMappingURL=main.css.map */

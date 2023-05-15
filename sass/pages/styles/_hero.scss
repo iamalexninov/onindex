@@ -1,6 +1,6 @@
-@use "../components/buttons" as btn;
-@use "../abstract/variables" as v;
-@use "../abstract/breakpoints" as b;
+@use "../../components/buttons" as btn;
+@use "../../abstract/variables" as v;
+@use "../../abstract/breakpoints" as b;
 
 .hero {
   background-image: url("../../images/hero-bg.jpg");
@@ -27,6 +27,9 @@
       text-align: justify;
       word-break: break-all;
       margin-block: 15px 30px;
+      @include b.tablet {
+        max-width: 400px;
+      }
     }
     &__buttons {
       display: flex;

@@ -12,3 +12,9 @@
 .section {
   padding-block: v.$section-padding;
 }
+
+.subtitle {
+  color: v.$primary-color;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
