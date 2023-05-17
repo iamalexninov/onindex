@@ -1,0 +1,52 @@
+@use "../../abstract/variables" as v;
+@use "../../abstract/breakpoints" as b;
+
+.case-study {
+  background-color: v.$darker-white-color;
+  &__text {
+    text-align: center;
+    &__title {
+      max-width: 850px;
+      margin: 0 auto 50px auto;
+    }
+  }
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+    @include b.mobile {
+      flex-direction: row;
+      gap: 2.5rem;
+    }
+    &__item {
+      background-color: v.$white-color;
+      &__img {
+        width: 100%;
+        @include b.mobile {
+          height: 250px;
+          object-fit: cover;
+        }
+      }
+      &__content {
+        padding: 20px;
+        &__text {
+          &__paragraph {
+            margin-block: 10px;
+          }
+        }
+        &__icons {
+          display: flex;
+          gap: 20px;
+          color: v.$grey-color;
+          &__calendar,
+          &__file {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+          }
+        }
+      }
+    }
+  }
+}

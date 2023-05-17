@@ -453,4 +453,91 @@ h5 {
   .feature__content__poster__img {
     max-width: 600px;
   }
+}
+
+.stats {
+  background-position: 50%;
+  background-image: url("../../../images/hero-bg.jpg");
+  background-attachment: fixed;
+  padding-block: 35px;
+}
+.stats__list {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  place-items: center;
+  gap: 36px 24px;
+}
+@media screen and (min-width: 481px) {
+  .stats__list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (min-width: 768px) {
+  .stats__list {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+.stats__list__item {
+  text-align: center;
+  color: hsl(0, 0%, 100%);
+}
+.stats__list__item__title {
+  font-size: 3rem;
+}
+@media screen and (min-width: 481px) {
+  .stats__list__item__title {
+    font-size: 5rem;
+  }
+}
+
+.case-study {
+  background-color: hsl(220, 20%, 97%);
+}
+.case-study__text {
+  text-align: center;
+}
+.case-study__text__title {
+  max-width: 850px;
+  margin: 0 auto 50px auto;
+}
+.case-study__list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;
+}
+@media screen and (min-width: 481px) {
+  .case-study__list {
+    flex-direction: row;
+    gap: 2.5rem;
+  }
+}
+.case-study__list__item {
+  background-color: hsl(0, 0%, 100%);
+}
+.case-study__list__item__img {
+  width: 100%;
+}
+@media screen and (min-width: 481px) {
+  .case-study__list__item__img {
+    height: 250px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+.case-study__list__item__content {
+  padding: 20px;
+}
+.case-study__list__item__content__text__paragraph {
+  margin-block: 10px;
+}
+.case-study__list__item__content__icons {
+  display: flex;
+  gap: 20px;
+  color: hsl(211, 12%, 48%);
+}
+.case-study__list__item__content__icons__calendar, .case-study__list__item__content__icons__file {
+  display: flex;
+  align-items: center;
+  gap: 5px;
 }/*# sourceMappingURL=main.css.map */
