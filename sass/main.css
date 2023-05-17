@@ -201,8 +201,6 @@ h5 {
 
 .hero {
   background-image: url("../../images/hero-bg.jpg");
-  min-height: 650px;
-  margin: 0 auto;
   position: relative;
   z-index: 1;
   padding-block: 90px;

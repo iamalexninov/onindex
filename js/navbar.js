@@ -32,7 +32,7 @@ closeBtn.addEventListener("click", (e) => {
 });
 
 navLink.forEach((link) =>
-  link.addEventListener("click", (e) => {
+  link.addEventListener("click", () => {
     navbar.classList.remove("active");
     closeBtn.style.display = "none";
     openBtn.style.display = "block";
