@@ -1,0 +1,24 @@
+@use "../../abstract/breakpoints" as b;
+@use "../../abstract/variables" as v;
+@use "../../components/buttons" as btn;
+
+.cta {
+  background-color: v.$charcoal-color;
+  &__content {
+    border-bottom: 0.5px solid v.$grey-color;
+    @include b.desktop {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    &__title {
+      max-width: 800px;
+      color: v.$white-color;
+      margin-bottom: 30px;
+    }
+    &__btn {
+      margin-bottom: 20px;
+      @include btn.button(v.$primary-color, v.$white-color);
+    }
+  }
+}

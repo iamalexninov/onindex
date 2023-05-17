@@ -10,7 +10,10 @@
 }
 
 .section {
-  padding-block-start: v.$section-padding;
+  padding-block: 50px;
+  @include b.mobile{
+    padding-block: 80px;
+  }
 }
 
 .subtitle {
