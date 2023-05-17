@@ -341,7 +341,7 @@ h5 {
 .service__content__list__item__paragraph {
   word-break: break-all;
   margin-bottom: 10px;
-  color: hsl(211, 12%, 48%);
+  color: hsl(0, 0%, 79%);
 }
 .service__content__list__item__btn {
   color: hsl(240, 57%, 54%);
@@ -403,7 +403,7 @@ h5 {
   display: none;
 }
 .about__content__text__list__item__more__paragraph {
-  color: hsl(211, 12%, 48%);
+  color: hsl(0, 0%, 79%);
 }
 .about__content__text__list__item__more.active {
   display: block;
@@ -421,7 +421,7 @@ h5 {
 }
 .feature__content__text__paragraph {
   margin-bottom: 20px;
-  color: hsl(211, 12%, 48%);
+  color: hsl(0, 0%, 79%);
   text-align: justify;
   word-break: break-all;
 }
@@ -542,7 +542,7 @@ h5 {
 .case-study__list__item__content__icons {
   display: flex;
   gap: 20px;
-  color: hsl(211, 12%, 48%);
+  color: hsl(0, 0%, 79%);
 }
 .case-study__list__item__content__icons__calendar, .case-study__list__item__content__icons__file {
   display: flex;
@@ -554,7 +554,7 @@ h5 {
   background-color: hsl(218, 22%, 26%);
 }
 .cta__content {
-  border-bottom: 0.5px solid hsl(211, 12%, 48%);
+  border-bottom: 0.5px solid hsl(0, 0%, 79%);
 }
 @media screen and (min-width: 992px) {
   .cta__content {
@@ -586,4 +586,62 @@ h5 {
   border: 2px solid hsl(0, 0%, 100%);
   background-color: transparent;
   transition: all 0.2s ease-in;
+}
+
+.footer {
+  background-color: hsl(218, 22%, 26%);
+  color: hsl(0, 0%, 100%);
+  padding-bottom: 80px;
+}
+.footer__content {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+@media screen and (min-width: 992px) {
+  .footer__content {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+.footer__content__onin__text__logo {
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+.footer__content__onin__text__social {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  font-size: 2.25rem;
+}
+.footer__content__newsletter__paragraph {
+  max-width: 350px;
+  margin-bottom: 20px;
+}
+.footer__content__newsletter__subscribe {
+  position: relative;
+  display: flex;
+}
+.footer__content__newsletter__subscribe__field {
+  outline: none;
+  padding: 15px;
+  background-color: #3a4456;
+  border-radius: 10px;
+  color: hsl(0, 0%, 100%);
+}
+.footer__content__newsletter__subscribe__btn {
+  padding: 15px;
+  position: absolute;
+  right: 0;
+  background-color: hsl(240, 57%, 54%);
+  color: hsl(0, 0%, 100%);
+  border-radius: 0px 10px 10px 0px;
+}
+
+.footer h4 {
+  margin-bottom: 5px;
+}
+
+.footer p {
+  color: hsl(0, 0%, 79%);
 }/*# sourceMappingURL=main.css.map */
